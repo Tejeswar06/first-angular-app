@@ -7,6 +7,7 @@ import {DUMMY_USERS} from './dummy-users';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Header, User],
+  standalone: true,
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

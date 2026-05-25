@@ -6,6 +6,7 @@ import {OutletContext} from '@angular/router';
 @Component({
   selector: 'app-user',
   imports: [],
+  standalone: true,
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
@@ -17,7 +18,8 @@ export class User {
   @Input({required: true}) id!: string;
   @Input({required: true}) avatar!: string ;
   @Input({required: true}) name!: string;
-  @Output() select = new EventEmitter();
+  // @Output() select = new EventEmitter();
+  select = output<string>();
 
    get ImagePath()
    {
