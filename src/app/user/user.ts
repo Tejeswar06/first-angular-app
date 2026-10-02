@@ -2,18 +2,7 @@ import {Component, EventEmitter, Input, Output, output} from '@angular/core';
 
 import { DUMMY_USERS } from '../dummy-users'
 import {OutletContext} from '@angular/router';
-
-// type UserInterface = {
-//   id: string;
-//   name: string;
-//   avatar: string;
-// }
-
-interface UserInterface{
-  id: string;
-  name: string;
-  avatar: string;
-}
+import {UserInterface} from './user.model';
 
 @Component({
   selector: 'app-user',
