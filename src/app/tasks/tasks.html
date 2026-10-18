@@ -18,6 +18,7 @@
     @if(isAddingTask){
       <app-new-task [newTask]="isAddingTask"
                     (cancel) = "onCancelAddTask()"
+                    (add)="onAddTask($event)"
       />
     }
   </ul>
