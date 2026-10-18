@@ -3,10 +3,11 @@ import {Component, EventEmitter, Input, Output, output} from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users'
 import {OutletContext} from '@angular/router';
 import {UserInterface} from './user.model';
+import {Card} from '../shared/card/card';
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  imports: [Card],
   standalone: true,
   templateUrl: './user.html',
   styleUrl: './user.css',
